@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dante Borgese</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Dante Borgese</a>
+      <ul class="nav-menu">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#library">Library</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-banner">
+      <img src="Dante%20Wide%20Profile.png" alt="Dante Borgese" class="profile-banner-img">
+      <div class="hero-text-overlay">
+        <h1 class="hero-name">Dante Borgese</h1>
+        <p class="hero-location">Based in NYC</p>
+        <h2 class="linkedin-title">Product & Growth Manager | Systems, GTM, and Distribution</h2>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="newsletter-signup">
+        <p>Join thousands of people who get my free newsletter delivered to their inbox, every week.</p>
+        <form class="newsletter-form" action="https://wisdomoftheweek.substack.com/api/v1/free" method="post" target="_blank">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="section collapsible-section">
+    <div class="container">
+      <button class="section-toggle" aria-expanded="false">
+        <h2>Work</h2>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="collapsible-content">
+        <div class="work-grid">
+          <div class="work-item">
+            <h3 class="work-company-heading">
+              <a href="https://hogylures.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                <img src="HOGY%20LOGO.png" alt="Hogy Lure Company" class="company-logo">
+                Hogy Lure Company
+              </a>
+            </h3>
+            <p class="work-role">Product & Growth Manager | May 2024 - Present</p>
+            <ul class="work-description">
+              <li>Building content-led growth systems across YouTube, blog, and e-commerce.</li>
+              <li>Running Meta ad campaigns end-to-end.</li>
+              <li>Current Project: Building the industry's most dynamic fishing ed-tech platform (more details soon..)</li>
+            </ul>
+            <p class="work-role-previous">Previously:</p>
+            <p class="work-role">Growth & Content Manager | May 2022 - May 2024</p>
+            <p class="work-role">Video Production Specialist | May 2021 - May 2022</p>
+            <a href="https://www.linkedin.com/in/danteborgese/" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+          </div>
+
+          <div class="work-item">
+            <h3 class="work-company-heading">
+              <a href="https://ramislandstudios.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                <img src="Ram%20Island%20Studios%20Logo.png" alt="Ram Island Studios" class="company-logo">
+                Ram Island Studios
+              </a>
+            </h3>
+            <p class="work-role">Founder & Operator | June 2018 - May 2021</p>
+            <p>Built and operated a video services business end-to-end. Worked directly with founders and small teams to translate business goals into realized outcomes.</p>
+            <a href="https://ramislandstudios.com" target="_blank" rel="noopener noreferrer">Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section id="content" class="section collapsible-section">
+    <div class="container">
+      <button class="section-toggle" aria-expanded="false">
+        <h2>Content</h2>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="collapsible-content">
+        <div class="content-embeds">
+          <!-- YouTube Channel Embed -->
+          <div class="embed-container">
+            <h3>Two Minute Wisdom</h3>
+            <p class="embed-bio">Translating timeless wisdom into practical insight for modern life.</p>
+            <div class="youtube-feed" id="youtube-feed">
+              <p>Loading videos...</p>
+            </div>
+            <p class="embed-link"><a href="https://www.youtube.com/@DanteBorgese" target="_blank" rel="noopener noreferrer">View Full Channel →</a></p>
+          </div>
+
+          <!-- Breakfast with Nana -->
+          <div class="embed-container">
+            <h3>Breakfast with Nana</h3>
+            <p class="embed-bio">Dante (25) and Gloria "Nana" (95) sit down to chat about life, love, and everything in between. Nana's sharp mind and wealth of experience offer a unique window into almost a century of wisdom.</p>
+            <div class="youtube-feed" id="podcast-feed">
+              <p>Loading videos...</p>
+            </div>
+            <p class="embed-link"><a href="https://www.youtube.com/playlist?list=PLlK2ayAQpVKcCL4umDUydWmA3rCD6qscM" target="_blank" rel="noopener noreferrer">View Full Playlist →</a></p>
+          </div>
+
+          <!-- My Original Travel Videos -->
+          <div class="embed-container">
+            <h3>My Original Travel Videos</h3>
+            <p class="embed-bio">how it all got started...</p>
+            <div class="youtube-feed" id="travel-videos-feed">
+              <p>Loading videos...</p>
+            </div>
+            <p class="embed-link"><a href="https://www.youtube.com/playlist?list=PLlK2ayAQpVKeSkX_crwEtxLmOiIPhulQQ" target="_blank" rel="noopener noreferrer">View Full Playlist →</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests & Hobbies Section -->
+  <section id="interests" class="section collapsible-section">
+    <div class="container">
+      <button class="section-toggle" aria-expanded="false">
+        <h2>Interests & Hobbies</h2>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="collapsible-content">
+        <div class="interests-list">
+          <div class="interest-item">
+            <div class="interest-content">
+              <h3>Contrast Therapy</h3>
+              <p>Exploring new sauna and cold plunge experiences in NYC. If you have any recommendations or want to go together, <span class="email-reveal-toggle" data-email="dlborgese@gmail.com">ping me here</span>.</p>
+            </div>
+            <div class="interest-image-wrapper">
+              <img src="sauna%20photo.jpeg" alt="Contrast Therapy" class="interest-image">
+            </div>
+          </div>
+
+          <div class="interest-item">
+            <div class="interest-content">
+              <h3>Golf</h3>
+              <p>Started caddying at the Woods Hole Golf Club at age 11, where I worked for over a decade. I learned to play, and ended up making the high school team. I'm a life long student of the game. My favorite golf related app on the market is <a href="https://apps.apple.com/us/app/eden-golf-course-reviews/id6746735468" target="_blank" rel="noopener noreferrer">Eden</a>. Check it out.</p>
+            </div>
+            <div class="interest-image-wrapper">
+              <img src="golf%20photo.jpeg" alt="Golf" class="interest-image">
+            </div>
+          </div>
+
+          <div class="interest-item">
+            <div class="interest-content">
+              <h3>Bow-Hunting</h3>
+              <p>Self-taught in 2022, learned everything from YouTube. Combining physical and mental toughness with respect for the outdoors.</p>
+            </div>
+            <div class="interest-image-wrapper">
+              <img src="hunting%20photo.jpeg" alt="Bow-Hunting" class="interest-image">
+            </div>
+          </div>
+
+        <div class="interest-item">
+          <h3>Music</h3>
+          <p>Creating videos and content in the music space.</p>
+          <div class="youtube-feed" id="music-videos-feed">
+            <p>Loading videos...</p>
+          </div>
+          <p class="embed-link" style="margin-top: 1rem;"><a href="https://www.youtube.com/playlist?list=PLlK2ayAQpVKcNJwoRxJhXd9tTaTpX64cI" target="_blank" rel="noopener noreferrer">View Full Playlist →</a></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dante's Library Section -->
+  <section id="library" class="section collapsible-section">
+    <div class="container">
+      <button class="section-toggle" aria-expanded="false">
+        <h2>Dante's Library</h2>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="collapsible-content">
+        <p class="section-quote">"I don't want to read all the books; I just want to read the best 100 over and over again." - Naval Ravikant</p>
+        <p class="section-subtitle">A curated collection of books that have shaped my thinking.</p>
+        <div class="books-grid">
+          <div class="book-item">
+            <a href="https://www.amazon.com/Almanack-Naval-Ravikant-Wisdom-Wealth/dp/1544514212" target="_blank" rel="noopener noreferrer" class="book-link">
+              <div class="book-cover">
+                <img src="https://covers.openlibrary.org/b/isbn/1544514212-L.jpg" alt="The Almanack of Naval Ravikant" onerror="this.style.display='none'">
+              </div>
+              <div class="book-info">
+                <h3>The Almanack of Naval Ravikant</h3>
+                <p class="book-author">Eric Jorgenson</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="book-item">
+            <a href="https://www.amazon.com/Antifragile-Things-Gain-Disorder-Incerto/dp/0812979680" target="_blank" rel="noopener noreferrer" class="book-link">
+              <div class="book-cover">
+                <img src="https://covers.openlibrary.org/b/isbn/0812979680-L.jpg" alt="Antifragile" onerror="this.style.display='none'">
+              </div>
+              <div class="book-info">
+                <h3>Antifragile</h3>
+                <p class="book-author">Nassim Nicholas Taleb</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="book-item">
+            <a href="https://www.amazon.com/Defining-Decade-Your-Twenties-Matter/dp/0446561754" target="_blank" rel="noopener noreferrer" class="book-link">
+              <div class="book-cover">
+                <img src="https://covers.openlibrary.org/b/isbn/0446561754-L.jpg" alt="The Defining Decade" onerror="this.style.display='none'">
+              </div>
+              <div class="book-info">
+                <h3>The Defining Decade</h3>
+                <p class="book-author">Meg Jay</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="book-item">
+            <a href="https://www.amazon.com/4-Hour-Workweek-Escape-Anywhere/dp/0307465357" target="_blank" rel="noopener noreferrer" class="book-link">
+              <div class="book-cover">
+                <img src="https://covers.openlibrary.org/b/isbn/0307465357-L.jpg" alt="The 4-Hour Workweek" onerror="this.style.display='none'">
+              </div>
+              <div class="book-info">
+                <h3>The 4-Hour Workweek</h3>
+                <p class="book-author">Tim Ferriss</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Socials Section -->
+  <section id="socials" class="section">
+    <div class="container">
+      <h2>Connect</h2>
+      <div class="socials-list">
+        <a href="https://www.linkedin.com/in/danteborgese/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+        <a href="https://x.com/DanteBorgese" target="_blank" rel="noopener noreferrer" class="social-link">X (Twitter)</a>
+        <a href="https://www.youtube.com/@DanteBorgese" target="_blank" rel="noopener noreferrer" class="social-link">YouTube</a>
+        <a href="https://wisdomoftheweek.substack.com" target="_blank" rel="noopener noreferrer" class="social-link">Newsletter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Dante Borgese. All rights reserved.</p>
+      <p class="footer-contact">Contact: <a href="mailto:dlborgese@gmail.com">dlborgese@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
