@@ -55,7 +55,6 @@ export default function VideoGallery({ title, description, playlistId, playlistU
               id: String(index),
               thumbnail: videoId,
               title: video.title,
-              subtitle: title,
               url: video.link,
             };
           }).filter((v: Video) => v.thumbnail !== '');
@@ -165,7 +164,6 @@ export default function VideoGallery({ title, description, playlistId, playlistU
             </div>
             <div className="video-info">
               <h3 className="video-title">{video.title}</h3>
-              {video.subtitle && <p className="video-subtitle">{video.subtitle}</p>}
             </div>
           </a>
         ))}

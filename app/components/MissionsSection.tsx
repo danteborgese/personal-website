@@ -44,10 +44,6 @@ export default function MissionsSection() {
             My work is guided by a set of core missions — building systems that create lasting value,
             connecting products with people who need them, and sharing knowledge that empowers others to grow.
           </p>
-          <a href="#work" className="missions-cta">
-            See My Work
-            <span className="cta-arrow">↗</span>
-          </a>
         </div>
 
         {/* Right - Expandable Cards */}

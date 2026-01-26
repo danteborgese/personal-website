@@ -1,4 +1,3 @@
-import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,40 +10,18 @@ export default function Footer() {
           <div className="footer-profile">
             <div className="footer-profile-header">
               <div className="footer-avatar-wrapper">
-                <Image
+                <img
                   src="/Dante-Profile Pic.jpeg"
                   alt="Dante Borgese"
-                  fill
-                  sizes="60px"
                   className="footer-avatar"
                 />
               </div>
-              <h3 className="footer-chat-title">Let's Chat</h3>
+              <h3 className="footer-chat-title">Let's Connect</h3>
             </div>
-            <p className="footer-bio">
-              I'm passionate about building systems that scale, crafting go-to-market strategies,
-              and creating content that drives growth. Let's connect and explore how we can work together.
-            </p>
-            <a
-              href="mailto:dlborgese@gmail.com"
-              className="footer-cta"
-            >
-              Schedule a call
-            </a>
           </div>
 
           {/* Navigation Columns */}
           <div className="footer-nav">
-            <div className="footer-nav-column">
-              <h4 className="footer-nav-title">NAVIGATE</h4>
-              <ul className="footer-nav-list">
-                <li><a href="#work">Work</a></li>
-                <li><a href="#content">Content</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#library">Library</a></li>
-              </ul>
-            </div>
-
             <div className="footer-nav-column">
               <h4 className="footer-nav-title">SOCIAL</h4>
               <ul className="footer-nav-list">
@@ -56,11 +33,18 @@ export default function Footer() {
             </div>
 
             <div className="footer-nav-column">
-              <h4 className="footer-nav-title">CONTACT</h4>
+              <h4 className="footer-nav-title">NAVIGATE</h4>
+              <ul className="footer-nav-list">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#library">Library</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-nav-column footer-contact-column">
               <ul className="footer-nav-list footer-contact-list">
-                <li>dlborgese@gmail.com</li>
-                <li>New York City</li>
-                <li>EST Timezone</li>
+                <li>Based in NYC</li>
               </ul>
             </div>
           </div>

@@ -12,10 +12,11 @@ export default function Hero() {
           sizes="100vw"
           className="hero-banner-img"
         />
+        <div className="hero-gradient-overlay"></div>
         <div className="hero-overlay">
           <h1 className="hero-name">Dante Borgese</h1>
-          <p className="hero-location">Based in NYC</p>
-          <p className="hero-title">Product & Growth Manager | Systems, GTM, and Distribution</p>
+          <p className="hero-subtitle">Product & Growth Marketing Manager | Systems, GTM, and Distribution</p>
+          <div className="hero-accent-line"></div>
         </div>
       </div>
     </section>

@@ -6,14 +6,26 @@ const testimonials = [
   {
     logo: "/HOGY LOGO.png",
     company: "HOGY Lure",
-    quote: "Dante brings a unique blend of strategic thinking and hands-on execution. His ability to understand systems and drive growth has been invaluable to our team.",
-    author: "HOGY Lure Company"
+    quote: "I was impressed by Dante's eagerness and ability to adapt to our system at lightning speed. I am continually impressed with his ability to listen and execute the plan while also taking the time to show you some \"chances\" he's taken. It's evident that Dante is interested in your business for its own sake, which translates to finished projects that are always above and beyond.",
+    author: "Mike Hogan, Founder & CEO at Hogy Lure Company"
   },
   {
-    logo: "/Ram Island Studios Logo.png",
-    company: "Ram Island Studios",
-    quote: "Working with Dante transformed our go-to-market approach. He has a rare talent for seeing the big picture while nailing the details that matter.",
-    author: "Ram Island Studios"
+    logo: "/CC(wavy)BLK.png",
+    company: "Crooked Coast",
+    quote: "We love creating with Dante. The guy is a total pro who can adapt to challenging situations and capture the moment. The finished product is always killer.",
+    author: "Luke Vose, Lead Guitar at Crooked Coast"
+  },
+  {
+    logo: "/Goose rocks wealth.jpg",
+    company: "Goose Rocks Wealth",
+    quote: "We were really fortunate to be able to work with Dante for the launch of our business. Through his creative planning, he was able to bring our story to life in a way I could not have believed possible. He is very easy to work with, and the process is very efficient. You won't regret hiring Dante.",
+    author: "Jason Pinkham, Founder & CEO at Goose Rocks Wealth"
+  },
+  {
+    logo: "/BDE Logo.png",
+    company: "Best.Day.Ever.",
+    quote: "Dante Borgese brings a wealth of professionalism well beyond his years. He communicates effectively, is incredibly responsive, asks all the right questions early on, and then brings his creative vision to life in ways that shock and awe. We're fortunate to have found him. Worth the investment every time.",
+    author: "Patrick Luckett, President & Co-Founder at Best.Day.Ever."
   }
 ];
 
@@ -31,51 +43,18 @@ export default function AboutSection() {
   return (
     <section className="about-section">
       <div className="about-container">
-        {/* Bento Photo Grid */}
-        <div className="bento-grid">
-          <div className="bento-item bento-item-1">
-            <Image
-              src="/Dante-Profile Pic.jpeg"
-              alt="Dante Borgese"
-              fill
-              sizes="(max-width: 768px) 50vw, 25vw"
-            />
-          </div>
-          <div className="bento-item bento-item-2">
-            <Image
-              src="/golf photo.jpeg"
-              alt="Golf"
-              fill
-              sizes="(max-width: 768px) 50vw, 25vw"
-            />
-          </div>
-          <div className="bento-item bento-item-3">
-            <Image
-              src="/hunting photo.jpeg"
-              alt="Outdoors"
-              fill
-              sizes="(max-width: 768px) 50vw, 25vw"
-            />
-          </div>
-          <div className="bento-item bento-item-4">
-            <Image
-              src="/sauna photo.jpeg"
-              alt="Wellness"
-              fill
-              sizes="(max-width: 768px) 50vw, 25vw"
-            />
-          </div>
-        </div>
+        <h2 className="testimonial-heading">A few nice things people have said about me</h2>
 
         {/* Testimonial Carousel */}
-        <div className="testimonial-carousel">
+        <div className="testimonial-carousel-wrapper">
+          <div className="testimonial-carousel">
           <div className="testimonial-content">
             <div className="testimonial-logo-wrapper">
               <Image
                 src={testimonials[currentTestimonial].logo}
                 alt={testimonials[currentTestimonial].company}
                 fill
-                sizes="120px"
+                sizes="360px"
                 className="testimonial-logo"
               />
             </div>
@@ -102,6 +81,7 @@ export default function AboutSection() {
               →
             </button>
           </div>
+        </div>
         </div>
       </div>
     </section>

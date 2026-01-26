@@ -13,10 +13,10 @@ export default function Home() {
       <PromoBanner />
       <Navbar />
       <Hero />
-      <NewsletterSignup />
+      <SectionGrid />
       <AboutSection />
       <MissionsSection />
-      <SectionGrid />
+      <NewsletterSignup />
       <Footer />
     </>
   );

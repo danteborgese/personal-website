@@ -46,9 +46,38 @@ export default function Navbar() {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsMenuOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    
+    // Check if this is an expandable list item (work, content, interests, library)
+    const expandableItems = ['work', 'content', 'interests', 'library'];
+    const hashId = href.slice(1); // Remove the #
+    
+    if (expandableItems.includes(hashId)) {
+      // For expandable list items, find the section and scroll to it
+      const section = document.querySelector('.expandable-section');
+      if (section) {
+        // Always update URL hash
+        window.location.hash = href;
+        
+        // Manually trigger expansion via custom event (works even if hashchange doesn't fire)
+        // Use a small delay to ensure DOM is ready
+        setTimeout(() => {
+          window.dispatchEvent(new CustomEvent('expandable-hash', { detail: { hash: hashId } }));
+        }, 50);
+        
+        // Scroll to section first, then ExpandableList will handle scrolling to the row
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      // For other links, use normal behavior
+      const element = document.querySelector(href);
+      if (element) {
+        // Update URL hash if it's a hash link
+        if (href.startsWith('#')) {
+          window.location.hash = href;
+        }
+        
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   };
 
