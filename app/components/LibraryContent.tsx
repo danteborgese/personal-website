@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 const books = [
   {
     title: "The Almanack of Naval Ravikant",
@@ -37,13 +39,11 @@ export default function LibraryContent() {
           <div key={index} className="book-item">
             <a href={book.url} target="_blank" rel="noopener noreferrer" className="book-link">
               <div className="book-cover">
-                <img
+                <Image
                   src={`https://covers.openlibrary.org/b/isbn/${book.isbn}-L.jpg`}
                   alt={book.title}
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                  }}
+                  fill
+                  sizes="(max-width: 768px) 120px, 150px"
                 />
               </div>
               <div className="book-info">

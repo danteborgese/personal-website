@@ -1,14 +1,20 @@
+import Image from 'next/image';
+
 export default function WorkContent() {
   return (
     <div className="work-grid">
       <div className="work-item">
         <h3 className="work-company-heading">
           <a href="https://hogylures.com" target="_blank" rel="noopener noreferrer" className="company-link">
-            <img
-              src="/HOGY LOGO.png"
-              alt="Hogy Lure Company"
-              className="company-logo"
-            />
+            <span className="company-logo-wrapper">
+              <Image
+                src="/HOGY LOGO.png"
+                alt="Hogy Lure Company"
+                fill
+                sizes="32px"
+                className="company-logo"
+              />
+            </span>
             Hogy Lure Company
           </a>
         </h3>
@@ -27,11 +33,15 @@ export default function WorkContent() {
       <div className="work-item">
         <h3 className="work-company-heading">
           <a href="https://ramislandstudios.com" target="_blank" rel="noopener noreferrer" className="company-link">
-            <img
-              src="/Ram Island Studios Logo.png"
-              alt="Ram Island Studios"
-              className="company-logo"
-            />
+            <span className="company-logo-wrapper">
+              <Image
+                src="/Ram Island Studios Logo.png"
+                alt="Ram Island Studios"
+                fill
+                sizes="32px"
+                className="company-logo"
+              />
+            </span>
             Ram Island Studios
           </a>
         </h3>
