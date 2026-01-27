@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Dante Borgese",
   description: "Product & Growth Manager | Systems, GTM, and Distribution",
+  openGraph: {
+    images: ["/preview-image.jpg"],
+  },
 };
 
 export default function RootLayout({
