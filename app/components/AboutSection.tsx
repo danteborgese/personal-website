@@ -43,7 +43,7 @@ export default function AboutSection() {
   return (
     <section className="about-section">
       <div className="about-container">
-        <h2 className="testimonial-heading">A few nice things people have said about me</h2>
+        <h2 className="testimonial-heading">A few nice things people have said about me.</h2>
 
         {/* Testimonial Carousel */}
         <div className="testimonial-carousel-wrapper">

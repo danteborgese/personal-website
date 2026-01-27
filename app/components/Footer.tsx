@@ -25,10 +25,11 @@ export default function Footer() {
             <div className="footer-nav-column">
               <h4 className="footer-nav-title">SOCIAL</h4>
               <ul className="footer-nav-list">
-                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://x.com/DanteBorgese" target="_blank" rel="noopener noreferrer">X</a></li>
+                <li><a href="https://www.instagram.com/danteborgese/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/danteborgese/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@DanteBorgese" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://substack.com/@danteborgese/" target="_blank" rel="noopener noreferrer">Substack</a></li>
               </ul>
             </div>
 
@@ -39,12 +40,7 @@ export default function Footer() {
                 <li><a href="#content">Content</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#library">Library</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-nav-column footer-contact-column">
-              <ul className="footer-nav-list footer-contact-list">
-                <li>Based in NYC</li>
+                <li style={{ color: '#000' }}>Based in NYC</li>
               </ul>
             </div>
           </div>
