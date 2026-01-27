@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Dante Borgese",
   description: "Product & Growth Manager | Systems, GTM, and Distribution",
+  icons: {
+    icon: "/favicon.ico?v=2",
+    apple: "/apple-touch-icon.png?v=2",
+  },
   openGraph: {
     images: ["/preview-image.jpg"],
   },
