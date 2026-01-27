@@ -26,6 +26,18 @@ const books = [
     author: "Tim Ferriss",
     isbn: "0307465357",
     url: "https://www.amazon.com/4-Hour-Workweek-Escape-Anywhere/dp/0307465357"
+  },
+  {
+    title: "The Medici Effect",
+    author: "Frans Johansson",
+    isbn: "1591391865",
+    url: "https://www.amazon.com/Medici-Effect-Breakthrough-Insights-Intersection/dp/1591391865"
+  },
+  {
+    title: "Alchemy",
+    author: "Rory Sutherland",
+    isbn: "0062388428",
+    url: "https://www.amazon.com/Alchemy-Curious-Science-Creating-Business/dp/0062388428"
   }
 ];
 

@@ -23,7 +23,7 @@ const missions = [
   {
     id: 4,
     title: "Growth Through Community",
-    description: "Fostering communities around shared interests and values. Believing that the strongest growth comes from genuine relationships and mutual value creation.",
+    description: "Fostering communities around shared interests and values. When people feel aligned, trust forms—and the right customers follow naturally.",
     image: "/sauna%20photo.jpeg",
     color: "#2F4F4F"
   }
@@ -41,8 +41,7 @@ export default function MissionsSection() {
             <span className="missions-highlight">Results</span>
           </h2>
           <p className="missions-description">
-            My work is guided by a set of core missions — building systems that create lasting value,
-            connecting products with people who need them, and sharing knowledge that empowers others to grow.
+            I take ideas from 0→1, build them into durable systems, and connect them with the people they're meant for—sharing what I learn along the way.
           </p>
         </div>
 
