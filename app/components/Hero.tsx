@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+console.log('Hero component loaded');
+
 export default function Hero() {
   return (
     <section id="hero" className="hero">
