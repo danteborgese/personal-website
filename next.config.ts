@@ -20,6 +20,19 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: "frame-src 'self' https://*.substack.com;",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

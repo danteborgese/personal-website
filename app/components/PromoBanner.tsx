@@ -12,7 +12,7 @@ export default function PromoBanner() {
         <p className="promo-banner-text">
           <strong>Subscribe now</strong> — never miss important news and weekly insights
         </p>
-        <a href="#hero" className="promo-banner-link">
+        <a href="https://wisdomoftheweek.substack.com" className="promo-banner-link" target="_blank" rel="noopener noreferrer">
           Join Free
         </a>
       </div>

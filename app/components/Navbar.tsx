@@ -10,7 +10,6 @@ export default function Navbar() {
     { name: "Content", link: "#content" },
     { name: "Interests", link: "#interests" },
     { name: "Library", link: "#library" },
-    { name: "Socials", link: "#socials" },
   ];
 
   // Handle scroll effect

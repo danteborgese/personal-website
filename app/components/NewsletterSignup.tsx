@@ -13,6 +13,8 @@ export default function NewsletterSignup() {
               frameBorder="0"
               scrolling="no"
               title="Subscribe to newsletter"
+              allow="clipboard-write"
+              loading="lazy"
             />
           </div>
         </div>
