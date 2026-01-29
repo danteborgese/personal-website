@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="hero-gradient-overlay"></div>
         <div className="hero-overlay">
           <h1 className="hero-name">Dante Borgese</h1>
-          <p className="hero-subtitle">Product & Growth Marketing Manager Systems, GTM, and Distribution</p>
+          <p className="hero-subtitle">Product & Growth Marketing | Content, GTM, and Distribution</p>
           <div className="hero-accent-line"></div>
         </div>
       </div>
