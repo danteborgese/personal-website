@@ -742,6 +742,9 @@ body {
   .testimonial-logo-wrapper--goose-rocks {
     height: 150px;
     width: 540px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .testimonial-logo {
@@ -2051,7 +2054,8 @@ body {
 
 @media (max-width: 600px) {
   .footer-nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
   }
 
   .footer-bottom {
